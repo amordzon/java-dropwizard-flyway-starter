@@ -21,7 +21,7 @@ public class TestDao {
 
             long end = System.currentTimeMillis();
 
-            System.out.println("Total time to execute query in milliseconds: " + (end - start));
+            System.out.println("Total time to execute: " + (end - start));
 
             while (resultSet.next()) {
                 databases.add(resultSet.getString("Database"));
