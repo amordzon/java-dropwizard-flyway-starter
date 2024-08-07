@@ -23,9 +23,13 @@ public class TestDao {
 
             System.out.println("Total time to execute: " + (end - start));
 
+            System.out.println("Retrieving database names");
+
             while (resultSet.next()) {
+                System.out.println(resultSet.getString("Database"));
                 databases.add(resultSet.getString("Database"));
             }
+            System.out.println("Finished retrieving database names");
         }
 
         return databases;
